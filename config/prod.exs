@@ -60,6 +60,10 @@ config :logger, level: :info
 #
 #     config :tokyoex_handson_demo, TokyoexHandsonDemo.Endpoint, root: "."
 
+config :phoenix, :serve_endpoints, true
+config :tokyoex_handson_demo, TokyoexHandsonDemo.Endpoint, server: true
+config :tokyoex_handson_demo, TokyoexHandsonDemo.Endpoint, root: "."
+
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
 import_config "prod.secret.exs"
