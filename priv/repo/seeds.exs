@@ -9,3 +9,11 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+TokyoexHandsonDemo.Repo.insert!(%TokyoexHandsonDemo.Article{
+  title: "テストtitle",
+  url: "テストurl",
+  og_title: "テストog_title",
+  og_image: "テストog_image",
+  og_description: "テストog_description"
+})
