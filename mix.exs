@@ -38,7 +38,8 @@ defmodule TokyoexHandsonDemo.Mixfile do
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
      {:httpoison, "~> 0.9.0"},
-     {:floki, "~> 0.9.0"}]
+     {:floki, "~> 0.9.0"},
+     {:exrm, "~> 1.0.6"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
