@@ -24,4 +24,10 @@ defmodule TokyoexHandsonDemo.Article do
     model
     |> cast(params, @required_fields, @optional_fields)
   end
+
+  def exist_with_url(url) do
+    Ecto.Query.from(article in __MODULE__, where: article.url == ^url)
+    |> TokyoexHandsonDemo.Repo.all
+    |> Enum.count > 0
+  end
 end
