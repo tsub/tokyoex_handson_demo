@@ -1,1 +1,6 @@
-<h1>hello, phoenix handson demo. this is list skelton</h1>
+<%= for article <- @list do %>
+  =======================<br>
+  <%= article.title %><br>
+  <%= article.og_image %><br>
+  <%= article.og_description %><br>
+<% end %>
